@@ -1,0 +1,155 @@
+:root {
+    --main-color: #576f2d;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+  }
+  
+  .container {
+    width: 310px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+      -5px -5px 10px rgba(0, 0, 0, 0.2)
+  }
+  
+  .output {
+    border: solid 2px var(--main-color);
+    height: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .output input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    text-align: end;
+    padding-right: 10px;
+    color: var(--main-color);
+  }
+  
+  .output input::placeholder {
+    color: var(--main-color);
+  }
+  
+  .btns {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px 15px;
+  }
+  
+  .btns button {
+    border: none;
+    outline: none;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--main-color);
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+  }
+  
+  
+  .btns button.sp1{
+    background-color: var(--main-color);
+    color: #fff;
+    font-size:25px;
+    color: rgb(255, 0, 0);
+  }
+  
+  .btns button.sp {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size:25px;
+    
+  }
+  
+  .btns button.equal {
+    width: 135px;
+    border-radius: 20px; 
+    background-color: rgb(21, 61, 21);
+    font-size: 45px
+    
+  }
+  
+  .appmenu {
+    position: absolute;
+  
+    top: 10px;
+    left: 10px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    gap: 5px;
+    margin: 10px;
+    transition: 0.1s;
+  }
+  
+  .icon span {
+    background-color: var(--main-color);
+    height: 5px;
+    width: 90%;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  .menu {
+    padding: 0px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    transform: scale(0);
+    transform-origin:bottom;
+    transition: 0.2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu.open {
+    transform: scale(1);
+  }
+  
+  .menu div {
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 2px #818181;
+  }
+  
+  .menu div:nth-child(1) {
+    background-color: #35619b;
+  }
+  
+  .menu div:nth-child(2) {
+    background-color: #5d451f;
+    
+  }
+  
+  body.blue {
+    --main-color: #355d91;
+  }
+  
+  body.Brown {
+    --main-color: #3a2401;
+  }
+  
+  
