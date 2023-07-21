@@ -24,7 +24,7 @@ function del() {
 function calc() {
   try {
     outScreen.value = eval(outScreen.value);
-    mode = 'equal';
+    mode = 'equal +';
   } catch (err) {
     outScreen.value = 'INVALID';
     mode = 'equal';
